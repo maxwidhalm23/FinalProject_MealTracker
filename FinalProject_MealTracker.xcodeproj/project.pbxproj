@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D8EF6FBC2937992200E3B886 /* Meal.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8EF6FBB2937992200E3B886 /* Meal.swift */; };
 		D8FF091A29364A0700F7F5BD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8FF091929364A0700F7F5BD /* AppDelegate.swift */; };
 		D8FF091C29364A0700F7F5BD /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8FF091B29364A0700F7F5BD /* SceneDelegate.swift */; };
 		D8FF091E29364A0700F7F5BD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8FF091D29364A0700F7F5BD /* ViewController.swift */; };
@@ -37,6 +38,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		D8EF6FBB2937992200E3B886 /* Meal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Meal.swift; sourceTree = "<group>"; };
 		D8FF091629364A0700F7F5BD /* FinalProject_MealTracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FinalProject_MealTracker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D8FF091929364A0700F7F5BD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D8FF091B29364A0700F7F5BD /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -104,6 +106,7 @@
 				D8FF091929364A0700F7F5BD /* AppDelegate.swift */,
 				D8FF091B29364A0700F7F5BD /* SceneDelegate.swift */,
 				D8FF091D29364A0700F7F5BD /* ViewController.swift */,
+				D8EF6FBB2937992200E3B886 /* Meal.swift */,
 				D8FF091F29364A0700F7F5BD /* Main.storyboard */,
 				D8FF092529364A0800F7F5BD /* Assets.xcassets */,
 				D8FF092729364A0800F7F5BD /* LaunchScreen.storyboard */,
@@ -261,6 +264,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D8EF6FBC2937992200E3B886 /* Meal.swift in Sources */,
 				D8FF092429364A0700F7F5BD /* FinalProject_MealTracker.xcdatamodeld in Sources */,
 				D8FF091E29364A0700F7F5BD /* ViewController.swift in Sources */,
 				D8FF091A29364A0700F7F5BD /* AppDelegate.swift in Sources */,
