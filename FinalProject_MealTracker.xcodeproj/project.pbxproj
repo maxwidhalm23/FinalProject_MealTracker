@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		7E349404293A39590094DD75 /* AddViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E349403293A39590094DD75 /* AddViewController.swift */; };
+		D870148C293A3A3700777B5C /* MealCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D870148B293A3A3700777B5C /* MealCell.swift */; };
+		D870148E293A3B1E00777B5C /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D870148D293A3B1E00777B5C /* ListViewController.swift */; };
 		D8EF6FBC2937992200E3B886 /* Meal.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8EF6FBB2937992200E3B886 /* Meal.swift */; };
 		D8FF091A29364A0700F7F5BD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8FF091929364A0700F7F5BD /* AppDelegate.swift */; };
 		D8FF091C29364A0700F7F5BD /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8FF091B29364A0700F7F5BD /* SceneDelegate.swift */; };
@@ -40,6 +42,8 @@
 
 /* Begin PBXFileReference section */
 		7E349403293A39590094DD75 /* AddViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddViewController.swift; sourceTree = "<group>"; };
+		D870148B293A3A3700777B5C /* MealCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealCell.swift; sourceTree = "<group>"; };
+		D870148D293A3B1E00777B5C /* ListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewController.swift; sourceTree = "<group>"; };
 		D8EF6FBB2937992200E3B886 /* Meal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Meal.swift; sourceTree = "<group>"; };
 		D8FF091629364A0700F7F5BD /* FinalProject_MealTracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FinalProject_MealTracker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D8FF091929364A0700F7F5BD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -109,7 +113,9 @@
 				D8FF091B29364A0700F7F5BD /* SceneDelegate.swift */,
 				D8FF091D29364A0700F7F5BD /* ViewController.swift */,
 				D8EF6FBB2937992200E3B886 /* Meal.swift */,
+				D870148B293A3A3700777B5C /* MealCell.swift */,
 				D8FF091F29364A0700F7F5BD /* Main.storyboard */,
+				D870148D293A3B1E00777B5C /* ListViewController.swift */,
 				7E349403293A39590094DD75 /* AddViewController.swift */,
 				D8FF092529364A0800F7F5BD /* Assets.xcassets */,
 				D8FF092729364A0800F7F5BD /* LaunchScreen.storyboard */,
@@ -270,8 +276,10 @@
 				D8EF6FBC2937992200E3B886 /* Meal.swift in Sources */,
 				D8FF092429364A0700F7F5BD /* FinalProject_MealTracker.xcdatamodeld in Sources */,
 				7E349404293A39590094DD75 /* AddViewController.swift in Sources */,
+				D870148C293A3A3700777B5C /* MealCell.swift in Sources */,
 				D8FF091E29364A0700F7F5BD /* ViewController.swift in Sources */,
 				D8FF091A29364A0700F7F5BD /* AppDelegate.swift in Sources */,
+				D870148E293A3B1E00777B5C /* ListViewController.swift in Sources */,
 				D8FF091C29364A0700F7F5BD /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

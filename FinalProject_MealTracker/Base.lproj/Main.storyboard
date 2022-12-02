@@ -42,10 +42,10 @@
             </objects>
             <point key="canvasLocation" x="977" y="-2"/>
         </scene>
-        <!--View Controller-->
+        <!--List View Controller-->
         <scene sceneID="sjb-og-T8G">
             <objects>
-                <viewController id="xcM-2v-tUe" sceneMemberID="viewController">
+                <viewController id="xcM-2v-tUe" customClass="ListViewController" customModule="FinalProject_MealTracker" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="aNI-VN-pan">
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -55,7 +55,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="kTj-zT-o1a">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="kTj-zT-o1a" customClass="MealCell" customModule="FinalProject_MealTracker" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="50" width="390" height="43.666667938232422"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="kTj-zT-o1a" id="k6N-Li-w4k">
@@ -87,6 +87,11 @@
                                                 </stackView>
                                             </subviews>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="caloriesLabelOutlet" destination="XA9-Sp-WTp" id="meu-BW-US3"/>
+                                            <outlet property="nameLabelOutlet" destination="e1w-DV-rne" id="4NT-Db-M0m"/>
+                                            <outlet property="priceLabelOutlet" destination="kIa-cc-RZT" id="si7-Ih-cSK"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
