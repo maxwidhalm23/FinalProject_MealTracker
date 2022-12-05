@@ -8,7 +8,15 @@
 import UIKit
 
 class AddViewController: UIViewController {
-
+    
+    
+    @IBOutlet weak var nameTextFieldOutlet: UITextField!
+    @IBOutlet weak var priceTextFieldOutlet: UITextField!
+    @IBOutlet weak var calTextFieldOutlet: UITextField!
+    
+    @IBOutlet weak var dayOutlet: UISegmentedControl!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -25,5 +33,9 @@ class AddViewController: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
+    
+    @IBAction func addMealAction(_ sender: Any) {
+    }
+    
 
 }
