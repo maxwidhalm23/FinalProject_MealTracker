@@ -21,18 +21,12 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="Add Meal"/>
-                                <connections>
-                                    <action selector="addMealAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="st6-gR-9dD"/>
-                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="m7U-yx-VEe">
                                 <rect key="frame" x="36" y="739" width="92" height="51"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="Meal List"/>
-                                <connections>
-                                    <action selector="mealListAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="PGI-ud-PRu"/>
-                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -40,8 +34,8 @@
                     </view>
                     <navigationItem key="navigationItem" id="mdp-mc-roG"/>
                     <connections>
-                        <segue destination="xcM-2v-tUe" kind="show" identifier="listSegue" id="v7G-JO-l6D"/>
-                        <segue destination="Nae-LT-ueh" kind="show" identifier="addMealSegue" id="UhQ-Zc-9pu"/>
+                        <segue destination="xcM-2v-tUe" kind="show" id="v7G-JO-l6D"/>
+                        <segue destination="Nae-LT-ueh" kind="show" id="UhQ-Zc-9pu"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -61,7 +55,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="myCell" id="kTj-zT-o1a" customClass="MealCell" customModule="FinalProject_MealTracker" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="kTj-zT-o1a" customClass="MealCell" customModule="FinalProject_MealTracker" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="50" width="390" height="43.666667938232422"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="kTj-zT-o1a" id="k6N-Li-w4k">
@@ -154,9 +148,6 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <navigationItem key="navigationItem" id="HPq-k5-arE"/>
-                    <connections>
-                        <outlet property="tableViewOutlet" destination="RGh-wH-3Oj" id="RqZ-g5-cb2"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="t3Q-e7-42G" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -215,7 +206,7 @@
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="Add This Meal"/>
                                 <connections>
-                                    <action selector="addMealAction:" destination="Nae-LT-ueh" eventType="touchUpInside" id="OBx-3p-O3r"/>
+                                    <action selector="addMealAction:" destination="Nae-LT-ueh" eventType="touchUpInside" id="sKL-QS-oZD"/>
                                 </connections>
                             </button>
                             <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="Xoz-FP-zbU">
@@ -244,10 +235,10 @@
                     </view>
                     <navigationItem key="navigationItem" id="hcc-HN-MEv"/>
                     <connections>
-                        <outlet property="calTextFieldOutlet" destination="4Tk-mR-bHf" id="mlB-3f-Ef0"/>
-                        <outlet property="dayOutlet" destination="Xoz-FP-zbU" id="Xbj-dX-4R4"/>
-                        <outlet property="nameTextFieldOutlet" destination="1CZ-6e-t3r" id="D6J-QT-UQl"/>
-                        <outlet property="priceTextFieldOutlet" destination="4e5-NU-md6" id="vRd-w2-1jf"/>
+                        <outlet property="calTextFieldOutlet" destination="4Tk-mR-bHf" id="8Gu-lS-WOH"/>
+                        <outlet property="dayOutlet" destination="Xoz-FP-zbU" id="9Pc-S8-EZq"/>
+                        <outlet property="nameTextFieldOutlet" destination="1CZ-6e-t3r" id="Fvn-nO-dMd"/>
+                        <outlet property="priceTextFieldOutlet" destination="4e5-NU-md6" id="Yj1-Sp-8rq"/>
                         <segue destination="xcM-2v-tUe" kind="show" id="ZfH-1b-rtK"/>
                     </connections>
                 </viewController>
@@ -275,7 +266,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="v7G-JO-l6D"/>
+        <segue reference="ZfH-1b-rtK"/>
     </inferredMetricsTieBreakers>
     <resources>
         <systemColor name="systemBackgroundColor">
