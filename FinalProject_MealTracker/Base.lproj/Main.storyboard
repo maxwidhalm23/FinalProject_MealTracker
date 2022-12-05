@@ -153,10 +153,10 @@
             </objects>
             <point key="canvasLocation" x="976.92307692307691" y="745.73459715639808"/>
         </scene>
-        <!--View Controller-->
+        <!--Add View Controller-->
         <scene sceneID="9Kz-zG-AQt">
             <objects>
-                <viewController id="Nae-LT-ueh" sceneMemberID="viewController">
+                <viewController id="Nae-LT-ueh" customClass="AddViewController" customModule="FinalProject_MealTracker" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="2eO-hx-M70">
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -205,6 +205,9 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="Add This Meal"/>
+                                <connections>
+                                    <action selector="addMealAction:" destination="Nae-LT-ueh" eventType="touchUpInside" id="sKL-QS-oZD"/>
+                                </connections>
                             </button>
                             <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="Xoz-FP-zbU">
                                 <rect key="frame" x="16" y="553" width="358" height="32"/>
@@ -232,6 +235,10 @@
                     </view>
                     <navigationItem key="navigationItem" id="hcc-HN-MEv"/>
                     <connections>
+                        <outlet property="calTextFieldOutlet" destination="4Tk-mR-bHf" id="8Gu-lS-WOH"/>
+                        <outlet property="dayOutlet" destination="Xoz-FP-zbU" id="9Pc-S8-EZq"/>
+                        <outlet property="nameTextFieldOutlet" destination="1CZ-6e-t3r" id="Fvn-nO-dMd"/>
+                        <outlet property="priceTextFieldOutlet" destination="4e5-NU-md6" id="Yj1-Sp-8rq"/>
                         <segue destination="xcM-2v-tUe" kind="show" id="ZfH-1b-rtK"/>
                     </connections>
                 </viewController>
