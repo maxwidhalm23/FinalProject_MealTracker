@@ -7,7 +7,9 @@
 
 import UIKit
 
-class ListViewController: UIViewController {
+class ListViewController: UIViewController, UITableViewDelegate, UITableViewDataSource  {
+    
+    
     
     @IBOutlet weak var tableViewOutlet: UITableView!
     
@@ -18,9 +20,16 @@ class ListViewController: UIViewController {
 
     }
     
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return AppData.meals.count
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "myCell") as!MealCell
+        
+    }
     
     
     
-
 
 }
