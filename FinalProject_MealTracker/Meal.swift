@@ -23,6 +23,9 @@ class Meal {
         self.cal = cal
     }
     
+    func edit(){
+        
+    }
     
     
 }

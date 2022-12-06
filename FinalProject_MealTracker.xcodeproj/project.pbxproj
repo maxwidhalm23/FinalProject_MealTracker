@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		7E349404293A39590094DD75 /* AddViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E349403293A39590094DD75 /* AddViewController.swift */; };
+		7E875572293F81FC00A08D80 /* EditMealController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E875571293F81FC00A08D80 /* EditMealController.swift */; };
 		D870148C293A3A3700777B5C /* MealCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D870148B293A3A3700777B5C /* MealCell.swift */; };
 		D870148E293A3B1E00777B5C /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D870148D293A3B1E00777B5C /* ListViewController.swift */; };
 		D8EF6FBC2937992200E3B886 /* Meal.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8EF6FBB2937992200E3B886 /* Meal.swift */; };
@@ -42,6 +43,7 @@
 
 /* Begin PBXFileReference section */
 		7E349403293A39590094DD75 /* AddViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddViewController.swift; sourceTree = "<group>"; };
+		7E875571293F81FC00A08D80 /* EditMealController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditMealController.swift; sourceTree = "<group>"; };
 		D870148B293A3A3700777B5C /* MealCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealCell.swift; sourceTree = "<group>"; };
 		D870148D293A3B1E00777B5C /* ListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewController.swift; sourceTree = "<group>"; };
 		D8EF6FBB2937992200E3B886 /* Meal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Meal.swift; sourceTree = "<group>"; };
@@ -115,6 +117,7 @@
 				D8EF6FBB2937992200E3B886 /* Meal.swift */,
 				D870148B293A3A3700777B5C /* MealCell.swift */,
 				D8FF091F29364A0700F7F5BD /* Main.storyboard */,
+				7E875571293F81FC00A08D80 /* EditMealController.swift */,
 				D870148D293A3B1E00777B5C /* ListViewController.swift */,
 				7E349403293A39590094DD75 /* AddViewController.swift */,
 				D8FF092529364A0800F7F5BD /* Assets.xcassets */,
@@ -275,6 +278,7 @@
 			files = (
 				D8EF6FBC2937992200E3B886 /* Meal.swift in Sources */,
 				D8FF092429364A0700F7F5BD /* FinalProject_MealTracker.xcdatamodeld in Sources */,
+				7E875572293F81FC00A08D80 /* EditMealController.swift in Sources */,
 				7E349404293A39590094DD75 /* AddViewController.swift in Sources */,
 				D870148C293A3A3700777B5C /* MealCell.swift in Sources */,
 				D8FF091E29364A0700F7F5BD /* ViewController.swift in Sources */,
