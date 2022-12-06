@@ -17,6 +17,8 @@ class ListViewController: UIViewController, UITableViewDelegate, UITableViewData
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        tableViewOutlet.delegate = self
+        tableViewOutlet.dataSource = self
 
     }
     
@@ -25,8 +27,9 @@ class ListViewController: UIViewController, UITableViewDelegate, UITableViewData
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "myCell") as!MealCell
-        
+        let cell = tableView.dequeueReusableCell(withIdentifier: "myCell") as! MealCell
+        cell.configure(name: AppData.meals[indexPath.row].name, price: AppData.meals[indexPath.row].price, cal: AppData.meals[indexPath.row].cal)
+        return cell
     }
     
     

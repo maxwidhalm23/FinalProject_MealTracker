@@ -37,6 +37,7 @@ class AddViewController: UIViewController {
     
     @IBAction func addMealAction(_ sender: Any) {
         AppData.meals.append(Meal(name: nameTextFieldOutlet.text!, price: Double(priceTextFieldOutlet.text!)!, cal: Int(calTextFieldOutlet.text!)!, day: Meal.Day.sunday))
+        performSegue(withIdentifier: "addViewToList", sender: nil)
     }
     
 
