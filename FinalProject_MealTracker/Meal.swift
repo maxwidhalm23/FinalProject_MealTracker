@@ -7,11 +7,11 @@
 
 import Foundation
 
-class Meal {
-    
-    enum Day {
-        case sunday, monday, tuesday, wednesday, thursday, friday, saturday
-    }
+enum Day {
+    case sunday, monday, tuesday, wednesday, thursday, friday, saturday
+}
+
+public class Meal {
     
     var name : String
     var price : Double
