@@ -7,8 +7,18 @@
 
 import UIKit
 class AppData {
-    static var meals = [Meal]()
+
     static var selectedRow = 0
+
+    static var sunMeals = [Meal]()
+    static var monMeals = [Meal]()
+    static var tueMeals = [Meal]()
+    static var wedMeals = [Meal]()
+    static var thuMeals = [Meal]()
+    static var friMeals = [Meal]()
+    static var satMeals = [Meal]()
+    
+    static var allMeals = [sunMeals, monMeals, tueMeals, wedMeals, thuMeals, friMeals, satMeals]
     
 }
 

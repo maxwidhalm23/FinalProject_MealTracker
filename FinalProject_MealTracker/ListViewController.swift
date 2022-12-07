@@ -29,12 +29,12 @@ class ListViewController: UIViewController, UITableViewDelegate, UITableViewData
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return AppData.meals.count
+        return AppData.sunMeals.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "myCell") as! MealCell
-        cell.configure(name: AppData.meals[indexPath.row].name, price: AppData.meals[indexPath.row].price, cal: AppData.meals[indexPath.row].cal)
+        cell.configure(name: AppData.sunMeals[indexPath.row].name, price: AppData.sunMeals[indexPath.row].price, cal: AppData.sunMeals[indexPath.row].cal)
         return cell
     }
     
@@ -44,7 +44,7 @@ class ListViewController: UIViewController, UITableViewDelegate, UITableViewData
 
     func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
         if (editingStyle == .delete) {
-            AppData.meals.remove(at: indexPath.row)
+            AppData.sunMeals.remove(at: indexPath.row)
             tableViewOutlet.reloadData()
         }
     }
