@@ -14,6 +14,7 @@ class ListViewController: UIViewController, UITableViewDelegate, UITableViewData
     @IBOutlet weak var tableViewOutlet: UITableView!
     
     
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -41,6 +42,11 @@ class ListViewController: UIViewController, UITableViewDelegate, UITableViewData
             AppData.meals.remove(at: indexPath.row)
             tableViewOutlet.reloadData()
         }
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        AppData.selectedRow = indexPath.row
+        performSegue(withIdentifier: "listToEdit", sender: nil)
     }
     
 

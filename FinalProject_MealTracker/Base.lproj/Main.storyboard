@@ -53,7 +53,7 @@
             <objects>
                 <viewController id="xcM-2v-tUe" customClass="ListViewController" customModule="FinalProject_MealTracker" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="aNI-VN-pan">
-                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="787"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="RGh-wH-3Oj">
@@ -168,7 +168,7 @@
             <objects>
                 <viewController id="yem-02-9js" customClass="EditMealController" customModule="FinalProject_MealTracker" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="5TD-2y-lxw">
-                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="787"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Name:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Gc-GJ-I5m">
@@ -238,6 +238,7 @@
                                 <connections>
                                     <action selector="addMealAction:" destination="Nae-LT-ueh" eventType="touchUpInside" id="TlB-Ko-JkF"/>
                                     <action selector="editMealAction:" destination="yem-02-9js" eventType="touchUpInside" id="7UP-ht-qlz"/>
+                                    <segue destination="xcM-2v-tUe" kind="show" id="RNX-gQ-3UA"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -369,7 +370,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="v7G-JO-l6D"/>
+        <segue reference="RNX-gQ-3UA"/>
     </inferredMetricsTieBreakers>
     <resources>
         <systemColor name="systemBackgroundColor">

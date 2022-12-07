@@ -8,7 +8,7 @@
 import UIKit
 class AppData {
     static var meals = [Meal]()
-    static var selectedRow: Int
+    static var selectedRow = 0
     
 }
 

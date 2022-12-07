@@ -24,11 +24,11 @@ class EditMealController: UIViewController {
     }
     
     @IBAction func editMealAction(_ sender: UIButton) {
-        AppData.meals[]
+        AppData.meals[AppData.selectedRow] = (Meal(name: nameOutlet.text!, price: Double(priceOutlet.text!)!, cal: Int(calOutlet.text!)!, day: Meal.Day.sunday))
+
     }
     
-    
-    
+
 
     
 
