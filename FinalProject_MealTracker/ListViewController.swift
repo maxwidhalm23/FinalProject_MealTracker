@@ -23,6 +23,11 @@ class ListViewController: UIViewController, UITableViewDelegate, UITableViewData
 
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(true)
+        tableViewOutlet.reloadData()
+    }
+    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return AppData.meals.count
     }
@@ -47,6 +52,9 @@ class ListViewController: UIViewController, UITableViewDelegate, UITableViewData
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         AppData.selectedRow = indexPath.row
         performSegue(withIdentifier: "listToEdit", sender: nil)
+    }
+    
+    @IBAction func unwind(_ seg: UIStoryboardSegue){
     }
     
 

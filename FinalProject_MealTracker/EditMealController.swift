@@ -23,8 +23,18 @@ class EditMealController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(true)
+        if isMovingFromParent{
+            performSegue(withIdentifier: "editUnwindSegue", sender: nil)
+        }
+            
+    }
+    
     @IBAction func editMealAction(_ sender: UIButton) {
         AppData.meals[AppData.selectedRow] = (Meal(name: nameOutlet.text!, price: Double(priceOutlet.text!)!, cal: Int(calOutlet.text!)!, day: Meal.Day.sunday))
+        performSegue(withIdentifier: "editUnwindSegue", sender: nil)
 
     }
     
