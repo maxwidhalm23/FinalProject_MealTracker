@@ -8,7 +8,7 @@
 import Foundation
 
 enum Day {
-    case sunday, monday, tuesday, wednesday, thursday, friday, saturday
+    case sunday, monday, tuesday, wednesday, thursday, friday, saturday, all
 }
 
 public class Meal {

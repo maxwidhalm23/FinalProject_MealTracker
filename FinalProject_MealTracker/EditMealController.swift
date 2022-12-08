@@ -19,6 +19,10 @@ class EditMealController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        nameOutlet.text = "\(AppData.allMeals[AppData.selectedDay][AppData.selectedRow].name)"
+        priceOutlet.text = "\(AppData.allMeals[AppData.selectedDay][AppData.selectedRow].price)"
+        calOutlet.text = "\(AppData.allMeals[AppData.selectedDay][AppData.selectedRow].cal)"
 
         // Do any additional setup after loading the view.
     }
@@ -33,7 +37,7 @@ class EditMealController: UIViewController {
     }
     
     @IBAction func editMealAction(_ sender: UIButton) {
-        AppData.meals[AppData.selectedRow] = (Meal(name: nameOutlet.text!, price: Double(priceOutlet.text!)!, cal: Int(calOutlet.text!)!, day: Meal.Day.sunday))
+//        AppData.allMeals[0][AppData.selectedRow] = (Meal(name: nameOutlet.text!, price: Double(priceOutlet.text!)!, cal: Int(calOutlet.text!)!, day: Meal.Day.sunday))
         performSegue(withIdentifier: "editUnwindSegue", sender: nil)
 
     }

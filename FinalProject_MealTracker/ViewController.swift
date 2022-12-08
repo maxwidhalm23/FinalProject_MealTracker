@@ -9,6 +9,7 @@ import UIKit
 class AppData {
 
     static var selectedRow = 0
+    static var selectedDay = 0 //(sunday)
 
     static var sunMeals = [Meal]()
     static var monMeals = [Meal]()
@@ -17,8 +18,9 @@ class AppData {
     static var thuMeals = [Meal]()
     static var friMeals = [Meal]()
     static var satMeals = [Meal]()
-    
     static var allMeals = [sunMeals, monMeals, tueMeals, wedMeals, thuMeals, friMeals, satMeals]
+    
+    
     
 }
 
