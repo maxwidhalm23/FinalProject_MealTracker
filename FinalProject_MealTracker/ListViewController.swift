@@ -13,7 +13,7 @@ class ListViewController: UIViewController, UITableViewDelegate, UITableViewData
     
     @IBOutlet weak var tableViewOutlet: UITableView!
     
-    var selectedDay : Day = Day.all // sunday is temp
+    var selectedDay : Day = Day.all // can be changed
     var selectedID : Int = 7 // 0-6, 0 = sunday, 1 = monday, 2 = tuesday... 7 = all
     
     
@@ -88,6 +88,10 @@ class ListViewController: UIViewController, UITableViewDelegate, UITableViewData
             selectedID = 7
             
         }
+    }
+    
+    @IBAction func addMealAction(_ sender: UIButton) {
+        performSegue(withIdentifier: "addViewToList", sender: nil)
     }
     
     @IBAction func unwind(_ seg: UIStoryboardSegue){
