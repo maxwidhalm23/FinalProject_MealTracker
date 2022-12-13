@@ -23,8 +23,10 @@ public class Meal {
         self.cal = cal
     }
     
-    func edit(){
-        
+    func edit(name:String, price:Double, cal:Int, day:Day){
+        self.name = name
+        self.price = price
+        self.cal = cal
     }
     
     

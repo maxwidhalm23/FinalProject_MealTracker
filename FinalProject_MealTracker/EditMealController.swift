@@ -8,6 +8,9 @@
 import UIKit
 
 class EditMealController: UIViewController {
+    
+    var selectedDay : Day = Day.sunday
+    var selectedID = 0
 
     @IBOutlet weak var nameOutlet: UITextField!
     
@@ -36,8 +39,32 @@ class EditMealController: UIViewController {
             
     }
     
+    @IBAction func dayAction(_ sender: UISegmentedControl) {
+        let select = sender.selectedSegmentIndex
+        
+        switch select {
+        case 0: selectedDay = Day.sunday
+            selectedID = 0
+        case 1: selectedDay = Day.monday
+            selectedID = 1
+        case 2: selectedDay = Day.tuesday
+            selectedID = 2
+        case 3: selectedDay = Day.wednesday
+            selectedID = 3
+        case 4: selectedDay = Day.thursday
+            selectedID = 4
+        case 5: selectedDay = Day.friday
+            selectedID = 5
+        case 6: selectedDay = Day.saturday
+            selectedID = 6
+        default: selectedDay = Day.sunday
+            selectedID = 0
+            
+        }
+    }
+    
     @IBAction func editMealAction(_ sender: UIButton) {
-//        AppData.allMeals[0][AppData.selectedRow] = (Meal(name: nameOutlet.text!, price: Double(priceOutlet.text!)!, cal: Int(calOutlet.text!)!, day: Meal.Day.sunday))
+        AppData.allMeals[AppData.selectedDay][AppData.selectedRow].edit(name: nameOutlet.text!, price: Double(priceOutlet.text!)!, cal: Int(calOutlet.text!)!, day: selectedDay)
         performSegue(withIdentifier: "editUnwindSegue", sender: nil)
 
     }

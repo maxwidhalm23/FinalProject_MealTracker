@@ -91,7 +91,7 @@ class ListViewController: UIViewController, UITableViewDelegate, UITableViewData
     }
     
     @IBAction func addMealAction(_ sender: UIButton) {
-        performSegue(withIdentifier: "addViewToList", sender: nil)
+        performSegue(withIdentifier: "listViewToAdd", sender: nil)
     }
     
     @IBAction func unwind(_ seg: UIStoryboardSegue){
