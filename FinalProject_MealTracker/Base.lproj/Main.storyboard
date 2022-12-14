@@ -114,6 +114,9 @@
                                     <segment title="Sat"/>
                                     <segment title="All"/>
                                 </segments>
+                                <connections>
+                                    <action selector="dayAction:" destination="xcM-2v-tUe" eventType="valueChanged" id="I74-h2-c8Z"/>
+                                </connections>
                             </segmentedControl>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Meals: #" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ve0-lA-2jl">
                                 <rect key="frame" x="16" y="698" width="118" height="21"/>
@@ -141,6 +144,9 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="Add Meal"/>
+                                <connections>
+                                    <action selector="addMealAction:" destination="xcM-2v-tUe" eventType="touchUpInside" id="h7H-Ff-Pwi"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Cost: $" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jv7-I0-uLI">
                                 <rect key="frame" x="174" y="697" width="117" height="21"/>
@@ -225,6 +231,9 @@
                                     <segment title="Fri"/>
                                     <segment title="Sat"/>
                                 </segments>
+                                <connections>
+                                    <action selector="dayAction:" destination="yem-02-9js" eventType="valueChanged" id="X6U-bE-pMC"/>
+                                </connections>
                             </segmentedControl>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Edit Meal" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zmj-8b-fEN">
                                 <rect key="frame" x="128" y="86" width="135" height="41"/>
@@ -329,6 +338,9 @@
                                     <segment title="Fri"/>
                                     <segment title="Sat"/>
                                 </segments>
+                                <connections>
+                                    <action selector="dayAction:" destination="Nae-LT-ueh" eventType="valueChanged" id="2RN-gS-omf"/>
+                                </connections>
                             </segmentedControl>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="What day did you have this meal..." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="reM-Md-apd">
                                 <rect key="frame" x="57" y="524" width="277" height="21"/>
