@@ -18,6 +18,12 @@ class ListViewController: UIViewController, UITableViewDelegate, UITableViewData
     var selectedID : Int = 7 // 0-6, 0 = sunday, 1 = monday, 2 = tuesday... 7 = all
     
     
+    @IBOutlet weak var mealTotalOutlet: UILabel!
+    
+    @IBOutlet weak var costTotalOutlet: UILabel!
+    
+    @IBOutlet weak var calTotalOutlet: UILabel!
+    
     
 
     override func viewDidLoad() {
@@ -25,6 +31,8 @@ class ListViewController: UIViewController, UITableViewDelegate, UITableViewData
         tableViewOutlet.delegate = self
         tableViewOutlet.dataSource = self
         
+        mealTotal()
+        totals()
         
         if let items = UserDefaults.standard.data(forKey: "myMeals") {
             let decoder = JSONDecoder()
@@ -101,6 +109,27 @@ class ListViewController: UIViewController, UITableViewDelegate, UITableViewData
         
         tableViewOutlet.reloadData()
     }
+    
+    var totalMeals = 0
+    func mealTotal(){
+        for i in 0..<AppData.allMeals.count {
+            totalMeals += AppData.allMeals[i].count
+            }
+        }
+    func totals(){
+        var totalCost = 0.0
+        var totalCals = 0
+            for i in 0..<totalMeals{
+                for j in 0..<AppData.allMeals[i].count{
+                    totalCals += AppData.allMeals[i][j].cal
+                    totalCost += AppData.allMeals[i][j].price
+                }
+            }
+        mealTotalOutlet.text = ("Meals: #\(totalMeals)")
+        costTotalOutlet.text = ("Cost: $\(totalCost)")
+        calTotalOutlet.text = ("Cal: \(totalCals)")
+        
+        }
     
     @IBAction func addMealAction(_ sender: UIButton) {
         performSegue(withIdentifier: "listViewToAdd", sender: nil)
