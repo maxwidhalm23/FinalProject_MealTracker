@@ -34,6 +34,7 @@ class AddViewController: UIViewController {
         switch select {
         case 0: selectedDay = Day.sunday
             selectedID = 0
+            
         case 1: selectedDay = Day.monday
             selectedID = 1
         case 2: selectedDay = Day.tuesday
@@ -85,6 +86,12 @@ class AddViewController: UIViewController {
         }
         
         AppData.allMeals[AppData.selectedDay].append(Meal(name: nameTextFieldOutlet.text!, price: Double(priceTextFieldOutlet.text!)!, cal: Int(calTextFieldOutlet.text!)!, day: selectedDay))
+        
+        let encoder = JSONEncoder()
+        // saving to user defaults
+        if let encoded = try? encoder.encode(AppData.allMeals) {
+            UserDefaults.standard.set(encoded, forKey: "myMovies")
+        }
         
         performSegue(withIdentifier: "addViewToList", sender: nil)
         

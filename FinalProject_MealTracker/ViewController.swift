@@ -26,13 +26,14 @@ class AppData {
 
 class ViewController: UIViewController {
     
-    
 
     var test = 0
     var test2 = 7
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        
         // Do any additional setup after loading the view.
     }
 

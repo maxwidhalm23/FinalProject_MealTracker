@@ -11,7 +11,7 @@ enum Day {
     case sunday, monday, tuesday, wednesday, thursday, friday, saturday, all
 }
 
-public class Meal {
+public class Meal: Codable {
     
     var name : String
     var price : Double

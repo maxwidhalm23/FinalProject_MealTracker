@@ -9,6 +9,7 @@ import UIKit
 
 class ListViewController: UIViewController, UITableViewDelegate, UITableViewDataSource  {
     
+    let defualts = UserDefaults.standard
     
     
     @IBOutlet weak var tableViewOutlet: UITableView!
@@ -23,6 +24,14 @@ class ListViewController: UIViewController, UITableViewDelegate, UITableViewData
         super.viewDidLoad()
         tableViewOutlet.delegate = self
         tableViewOutlet.dataSource = self
+        
+        
+        if let items = UserDefaults.standard.data(forKey: "myMeals") {
+            let decoder = JSONDecoder()
+            if let decoded = try? decoder.decode([[Meal]].self, from: items) {
+                AppData.allMeals = decoded
+            }
+        }
 
     }
     
@@ -60,7 +69,7 @@ class ListViewController: UIViewController, UITableViewDelegate, UITableViewData
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        //AppData.selectedRow = indexPath.row
+        AppData.selectedRow = indexPath.row
         performSegue(withIdentifier: "listToEdit", sender: nil)
     }
     
@@ -88,6 +97,9 @@ class ListViewController: UIViewController, UITableViewDelegate, UITableViewData
             selectedID = 7
             
         }
+        
+        
+        tableViewOutlet.reloadData()
     }
     
     @IBAction func addMealAction(_ sender: UIButton) {
